@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Evento</title>
+</head>
+<body>
+    <h2>Onde está a princesa de Gales?</h2>
+
+<p>Descubra através do sorteio o que aconteceu com Kate</p>
+
+<button onclick="document.getElementById('demo').innerHTML = getRndInteger(0,10)">Cadê a Kate Middleton?</button> <br>
+
+<strong>1-Cortou a franja sozinha e esta esperando crescer</strong> <br>
+<strong>2-Fez lipo e deu errado</strong><br>
+<strong>3-Em coma</strong><br>
+<strong>4-Confinada para participar do BBB</strong><br>
+<strong>5-Focada no concurso da Caixa</strong><br>
+<strong>6-Treinando para lutar com o Popó</strong><br>
+<strong>7-Foi contratada pela Record</strong><br>
+<strong>8-Se preparando para ser rainha</strong><br>
+<strong>9-Traiu o William</strong><br>
+<strong>10-O William pediu divorcio</strong><br>
+ 
+   <p id="demo"></p>
+
+   <script>
+    function getRndInteger(min, max) {
+      return Math.floor(Math.random() * (max - min)) + min;
+    }
+    </script>
+</body>
+</html>
